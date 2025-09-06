@@ -3,41 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Premium Perfume Collection | Yassir Rzigui E-Commerce</title>
+    <meta name="description" content="Discover luxury perfumes with our interactive product cards. Modern e-commerce design by Yassir Rzigui.">
+    <meta name="author" content="Yassir Rzigui">
+    <meta name="keywords" content="perfume, luxury, e-commerce, product card, web design, Chanel">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Premium Perfume Collection">
+    <meta property="og:description" content="Luxury perfume product card with modern design">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yazzy01-perfume.vercel.app">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Premium Perfume Collection">
+    <meta name="twitter:description" content="Luxury perfume product card with modern design">
+    
     <link rel="stylesheet" href="./style produit.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="product-card">
-   <div class="product-image">
-    <img src="./chanel_gabrielle_perfume_50ml_1653231087_71f33caf.jpg" alt="Gabrielle Essence Eau De Parfum">
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
 
-   </div>
-   <div class="product-category">
-    <div class="left-content">
-        <span class="category"><br><br>PERFUME<br><br></span>
-        <h1 class="product-title">
-            Gabrielle<br>
-            Essence Eau<br>
-            De Parfum<br><br>
-            
-        </h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>Premium Fragrance Collection</h1>
+            <p>Curated by Yassir Rzigui - E-Commerce Specialist</p>
+        </div>
+    </header>
+
+    <!-- Main Product Section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Product Card -->
+            <div class="product-card" data-aos="fade-up">
+                <!-- Product Badge -->
+                <div class="product-badge">
+                    <span class="badge-text">Limited Edition</span>
+                </div>
+
+                <!-- Wishlist Button -->
+                <button class="wishlist-btn" aria-label="Add to wishlist">
+                    <i class="far fa-heart"></i>
+                </button>
+
+                <!-- Product Image -->
+                <div class="product-image">
+                    <img src="./chanel_gabrielle_perfume_50ml_1653231087_71f33caf.jpg" 
+                         alt="Gabrielle Essence Eau De Parfum" 
+                         loading="lazy">
+                    <div class="image-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i>
+                            Quick View
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <span class="category">LUXURY PERFUME</span>
+                        <div class="rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(4.9) 127 reviews</span>
+                        </div>
+                    </div>
+
+                    <h1 class="product-title">
+                        Gabrielle Essence Eau De Parfum
+                    </h1>
+
+                    <p class="product-description">
+                        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                        Perfumer-Creator for the House of CHANEL. This exquisite fragrance captures 
+                        the essence of femininity with its radiant and sensual composition.
+                    </p>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>100% Authentic</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="size-selection">
+                        <h3>Size:</h3>
+                        <div class="size-options">
+                            <button class="size-btn" data-size="30ml">30ml</button>
+                            <button class="size-btn active" data-size="50ml">50ml</button>
+                            <button class="size-btn" data-size="100ml">100ml</button>
+                        </div>
+                    </div>
+
+                    <!-- Price Container -->
+                    <div class="price-container">
+                        <div class="price-info">
+                            <span class="current-price">$149.99</span>
+                            <span class="original-price">$169.99</span>
+                            <span class="discount-badge">12% OFF</span>
+                        </div>
+                        <div class="price-details">
+                            <span class="save-amount">You save $20.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Selector -->
+                    <div class="quantity-section">
+                        <h3>Quantity:</h3>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus" data-action="decrease">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="number" class="quantity-input" value="1" min="1" max="10">
+                            <button class="quantity-btn plus" data-action="increase">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="button-container">
+                        <button class="cart-button primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Add to Cart
+                        </button>
+                        <button class="buy-now-button">
+                            <i class="fas fa-bolt"></i>
+                            Buy Now
+                        </button>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free delivery on orders over $100</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>2-year warranty included</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>24/7 customer support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <section class="related-products">
+                <h2>You Might Also Like</h2>
+                <div class="products-grid">
+                    <div class="mini-product-card">
+                        <div class="mini-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-image"></i>
+                            </div>
+                        </div>
+                        <h3>Chanel No. 5</h3>
+                        <p>$180.00</p>
+                    </div>
+                    <div class="mini-product-card">
+                        <div class="mini-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-image"></i>
+                            </div>
+                        </div>
+                        <h3>Coco Mademoiselle</h3>
+                        <p>$165.00</p>
+                    </div>
+                    <div class="mini-product-card">
+                        <div class="mini-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-image"></i>
+                            </div>
+                        </div>
+                        <h3>Bleu de Chanel</h3>
+                        <p>$190.00</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Premium Fragrances</h3>
+                    <p>Curated collection of luxury perfumes and cosmetics</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Built by Yassir Rzigui</p>
+                    <div class="social-links">
+                        <a href="mailto:rziguiyassir@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://linkedin.com/in/yassir-rzigui"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/yazzy01"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yassir Rzigui - Full-Stack Developer & E-Commerce Specialist</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Notification -->
+    <div id="cart-notification" class="cart-notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <span>Product added to cart!</span>
+        </div>
     </div>
-    <div class="right-content">
-        <p class="product-description">
-            A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL. <br><br>
-        </p>
-        <div class="price-container">
-            <span class="current-price">$149.99</span>
-            <span class="original-price">$169.99 <br></span>
-        </div><br>
-    
-    
-    <div class="button-container">
-        <button class="cart-button">
-            <img src="./icons8-cart-24.png" alt="cart icon" class="cart-icon">
-            Add to Cart
-        </button>
-    </div>
+
+    <script src="product-interactions.js"></script>
+    <script src="theme-toggle.js"></script>
 </body>
 </html>
